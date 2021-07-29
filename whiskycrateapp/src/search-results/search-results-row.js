@@ -4,12 +4,12 @@ import "./search-results.css";
 const SearchResultsRow = ({   distillery }) => {
   const history = useHistory();
 
-  // const setActive = () => {
-  //   history.push(`/house/${distillery.id}`);
-  // };
+  const setActive = () => {
+    history.push(`/distillery/${distillery.id}`);
+  };
 
   return (
-    <tr >
+    <tr onClick={setActive}>
       <td>{distillery.name}</td>
       <td>{distillery.currentlyoperating}</td>
       <td>{distillery.region}</td>

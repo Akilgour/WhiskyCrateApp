@@ -6,7 +6,7 @@ import FeaturedDistillery from "./featured-distillery";
  import SearchResults from "../search-results";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-//import DistilleryFromQuery from "../house/HouseFromQuery";
+ import DistilleryFromQuery from "../distillery/DistilleryFromQuery";
 
 function App() {
   const [allDistilleries, setAllDistilleries] = useState([]);
@@ -38,9 +38,9 @@ function App() {
             <SearchResults allDistilleries={allDistilleries} />
           </Route>
 
-         {/* <Route path="/house/:id">
-            <DistilleryFromQuery allHouses={allHouses} />
-          </Route> */}
+          <Route path="/distillery/:id">
+            <DistilleryFromQuery allDistilleries={allDistilleries} />
+          </Route> 
 
           <Route path="/">
             <FeaturedDistillery distillery={featuredHouse} />
