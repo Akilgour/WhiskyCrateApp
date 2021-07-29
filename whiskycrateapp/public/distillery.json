@@ -16,5 +16,17 @@
         "name": "Port Charlotte",
         "region": "Islay",
         "currentlyoperating": "false" 
+    },
+    {
+        "id": 4,
+        "name": "Bruichladdich",
+        "region": "Islay",
+        "currentlyoperating": "true" 
+    },
+    {
+        "id": 5,
+        "name": "Caol Ila",
+        "region": "Islay",
+        "currentlyoperating": "true" 
     }
 ]
