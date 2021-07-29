@@ -2,8 +2,8 @@ import { useState, useEffect, useMemo } from "react";
 import "./main-page.css";
 import Header from "./header";
 import FeaturedDistillery from "./featured-distillery";
-// import HouseFilter from "./house-filter";
-// import SearchResults from "../search-results";
+ import RegionFilter from "./region-filter";
+ import SearchResults from "../search-results";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //import DistilleryFromQuery from "../house/HouseFromQuery";
@@ -31,14 +31,14 @@ function App() {
     <Router>
       <div className="container">
         <Header subtitle="Providing houses all over the world" />
-        {/* <HouseFilter allDistilleries={allDistilleries} /> */}
+          <RegionFilter allDistilleries={allDistilleries} /> 
 
         <Switch>
-          {/* <Route path="/searchresults/:country">
+           <Route path="/searchresults/:region">
             <SearchResults allDistilleries={allDistilleries} />
           </Route>
 
-          <Route path="/house/:id">
+         {/* <Route path="/house/:id">
             <DistilleryFromQuery allHouses={allHouses} />
           </Route> */}
 
